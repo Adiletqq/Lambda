@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ресторан LAMBDA</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style>.icons:hover,.top_mnu li a:hover,a.button{text-decoration:none}body,h2,header h1{position:relative}h2:after,header h1:after{position:absolute;bottom:0;left:50%}.about_signature,.buttons_wrap,.fine_box_wrap,h2,header h1,p{text-align:center}body{font-size:15px;min-width:320px;line-height:1.375em;font-family:RalewayRegular,sans-serif;overflow-x:hidden;color:#333}.hidden{display:none}.top_mnu li,a.button{display:inline-block}header{background:url(../img/header_bg.jpg) top center;min-height:500px;width:100%;color:#fff;font-family:"Gentium Book Basic Bold";background-size:cover}header h1{font-family:"Yeseva One",sans-serif;font-size:52px;line-height:1;margin-top:70px;font-weight:400}header h1:after{content:"";background:url(../img/h1_decor.png) no-repeat;background-size:cover;width:232px;height:43px;-webkit-transform:translate(-50%,150%);-ms-transform:translate(-50%,150%);transform:translate(-50%,150%)}.header_top{background:url(../img/top_wrap_bg2.png) no-repeat;min-height:200px;width:100%;background-size:contain}.logo{margin-top:10px}.top_mnu{list-style-type:none;margin:0}.top_mnu li a{color:#fff;font-weight:700;margin-left:15px;font-size:1.125em;line-height:6;padding-top:40px;-webkit-transition:all .5s ease;transition:all .5s ease}.top_mnu li a:hover{border-top:1px solid #fff}.icons_wrap{line-height:6;margin-top:5px}.icons{font-family:FontAwesome;color:#dab33e;margin-right:10px}.icons:hover{color:#c90}.buttons_wrap{margin-top:100px}a.button{color:#fff;margin:0 20px 10px;padding:15px 40px;font-family:"Lato Regular",sans-serif;text-transform:uppercase;-webkit-transition:all .5s ease;transition:all .5s ease;font-size:.875em}.button_black{background-color:rgba(0,0,0,.4);border:1px solid rgba(0,0,0,.8)}.button_black:hover,.button_white{background-color:rgba(225,225,225,.4);border:1px solid rgba(225,225,225,.8)}.button_white:hover{background-color:rgba(0,0,0,.4);border:1px solid rgba(0,0,0,.8)}h2{font-family:"Yeseva One",sans-serif;color:#c90;font-weight:400;margin-bottom:50px}h2:after{content:'';width:247px;height:24px;-webkit-transform:translate(-50%,150%);-ms-transform:translate(-50%,150%);transform:translate(-50%,150%);background:url(../img/h2_decor.png) no-repeat}h2.white{color:#fff}h2.white:after{background:url(../img/h2_decor_white.png) no-repeat}.about_info{margin:100px auto;max-width:400px}.dish{margin-top:20px}.dish img{width:100%}.about_signature img{width:30%}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+
+</head>
+
+<body>
+<header>
+	<div class="header_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2 col-md-2">
+					<div class="logo"><img src="img/logo.png" alt=""></div>
+				</div>
+				<div class="col-sm-10 col-md-6 col-md-offset-2">
+				<a href="#" class="burger"><img src="img/three.png" alt=""></a>
+
+				<ul class="top_mnu">
+					<li><a href="#" class="anchor">Главная</a></li>
+					<li><a href="#about" class="anchor">О нас</a></li>
+					<li><a href="#fine" class="anchor">Ингредиенты</a></li>
+					<li><a href="#menu" class="anchor">Меню</a></li>
+					<li><a href="#reviews" class="anchor">Отзывы</a></li>
+					<li><a href="#reserv" class="anchor">Резерв</a></li>
+				</ul></div>
+				<div class="col-sm-12 col-md-2">
+				<div class="icons_wrap">
+					<a href="#" class="icons">&#xf099;</a>
+					<a href="#" class="icons">&#xf167;</a>
+					<a href="#" class="icons">&#xf09a;</a>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<h1>Правильные ингредиенты, <br>
+					для настоящего блюда</h1>
+					<div class="buttons_wrap">
+					<a href="#reserv" class="button button_black anchor">Заказать столик</a>
+					<a href="#menu" class="button button_white anchor">Смотреть меню</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!--Секция О нас -->
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="about_info">
+					<h2>Настоящие блюдо </h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex asperiores, necessitatibus modi omnis adipisci totam ratione id, doloremque beatae atque, exercitationem quod non optio quasi. Itaque est odit officia ab.</p>
+					<div class="about_signature">
+						<img src="img/cook.png" alt="">
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-6">
+			<div class="dish">
+			<img src="img/dish.png" alt="">
+</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="fine">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-6">
+				<div class="fine_box_wrap">
+					<h2 class="white">Правильные ингредиенты </h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, qui quia aperiam. Cum at repellendus ex quidem maiores, id optio fuga perferendis quasi necessitatibus, labore error, asperiores explicabo eum possimus!</p>
+					<div class="fine_img ">
+						<img src="img/item1.jpg" alt="">
+					</div>
+						<div class="fine_img ">
+						<img src="img/item2.jpg" alt="">
+					</div>
+						<div class="fine_img ">
+						<img src="img/item3.jpg" alt="">
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+<section id="menu">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="menu_wrap">
+					<h2>Аператив</h2>
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+				</div>
+
+				<div class="menu_wrap">
+					<h2>Салаты</h2>
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+				</div>
+
+			</div>
+			<div class="col-md-6">
+					<div class="menu_wrap">
+					<h2>Закуски</h2>
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+						<div class="menu_wrap">
+					<h2>Основные блюда</h2>
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+						<div class="menu_item_wrap">
+							<div class="menu_item">
+								<div class="menu_item_title">Название</div>
+								<div class="menu_item_price">1250 T</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="menu_item_descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						
+				</div>
+						
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="reviews">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="fine_box_wrap">
+					<h2 class="white">Рецензия нашего гостя </h2>
+					<p class="quote"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, qui quia aperiam. Cum at repellendus ex quidem maiores, id optio fuga perferendis quasi necessitatibus, labore error, asperiores explicabo eum possimus!</p>
+
+				<p>Иван Иванов</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="reserv">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="reserv_img_wrap">
+					<img src="img/reserv_item1.jpg" alt="">
+					<img src="img/reserv_item2.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-6 animated_reserv">
+				<h2>Зарезервировать столик</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur maiores quia a sint, voluptas expedita minus minima et, rerum atque modi facilis odit animi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque nulla, atque quos vero maiores possimus placeat. Fugit aperiam, in numquam.</p>
+				<form id="reserv_form">
+				<div class="reserv_form_items">
+					<label>Имя
+					<input type="text" name="name" placeholder="Иван Иванов"></label></div>
+						<div class="reserv_form_items"><label>Телефон
+					<input type="text" name="phone" placeholder="8 (775) 775-77-77"></label></div>
+					<div class="reserv_form_items">
+					<label>Дата
+					<input type="text" name="date" placeholder="1 августа 2017 года"></label></div>
+					<div class="reserv_form_items">
+					<label>Количество
+					<input type="text" name="persons" placeholder="Количество человек"></label></div>
+					<button class="send_button">Зарезервировать сейчас!</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+					<h2 class="white">О нас</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iure molestiae eius velit. Accusamus molestias aliquid nulla quis quaerat, ullam, repellat inventore quam nostrum, illo facilis necessitatibus possimus expedita qui.</p>
+			
+
+
+			</div>
+			<div class="col-md-4">
+					<div class="footer_info">
+					<h2 class="white">Часы работы</h2>
+					<p>Ежедневно: 10:00-02:00</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer_info">
+					<h2 class="white">Контакты</h2>
+					<p>г. Астана, ул. Иманова 19</p>
+					<p><a href="tel:">8 (7172) 123-45-67</a></p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<div class="hidden"><form id="test-form" class="mfp-hide white-popup-block">
+	<h1>Form</h1>
+	<fieldset style="border:0;">
+		<p>Lightbox has an option to automatically focus on the first input. It's strongly recommended to use <code>inline</code> popup type for lightboxes with form instead of <code>ajax</code> (to keep entered data if the user accidentally refreshed the page).</p>
+		<ol>
+			<li>
+				<label for="name">Name</label>
+				<input id="name" name="name" type="text" placeholder="Name" required="">
+			</li>
+			<li>
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+			</li>
+			<li>
+				<label for="phone">Phone</label>
+				<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+			</li>
+			<li>
+				<label for="textarea">Textarea</label><br>
+				<textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
+			</li>
+		</ol>
+	</fieldset>
+</form></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Yeseva One';
+    src: 
+    url('fonts/Yeseva One/yesevaone.woff2') format('woff2'), 
+    url('fonts/Yeseva One/yesevaone.woff') format('woff'), 
+    url('fonts/Yeseva One/yesevaone.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
